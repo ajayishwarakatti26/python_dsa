@@ -32,3 +32,17 @@ def palindrom(p):
         
 print(palindrom("121"))
 
+# Given an array, move all zeroes to the end while maintaining the order of non-zero elements.
+def move_zerolast(nums):
+    left = 0
+
+    for right in range(len(nums)):
+        if nums[right] != 0:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+
+    return nums
+
+print(move_zerolast([1,0,8,0,7,6]))
+
+
