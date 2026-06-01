@@ -1,7 +1,5 @@
 ### temoplet fix window:
 def fixed_sliding_window(arr, k):
-
-
     n = len(arr)
     if n < k:
         return 0  # Edge case: array smaller than window size
